@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Nabla&family=Passion+One:wght@400;700;900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sriracha&family=Tourney:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+
+@keyframes piscar {
+    0% {opacity: 0;}
+    50% {opacity: 0.3;}
+    100% {opacity: 0;}
+}
+
+@keyframes camaleao {
+    0% {color: #b4b4b4;}
+    50% {color:  #eee;}
+    100% {color:#222222 ;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: "Space Mono", monospace
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 30px 50px;
+}
+
+h1 {
+    font-family: "Unbutu Mono", monospace;
+    flex-wrap: nowrap;
+    font-size: 3em;
+    font-weight: bold;
+    justify-self: center;
+    animation: piscar 3s infinite;
+    color: #9c9c9c;
+}
+
+h1:hover {
+    animation: camaleao 2s infinite;
+    opacity: 0.2;
+    text-shadow: 0px 0px 20px 10px #3c3c3c;
+    border: 8px solid #9c9c9c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 80px 50px #9c9c9c;
+    background-color: #585757;
+}
+
+header > img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 20vw;
+    margin: auto;
+    animation: piscar 3s infinite;
+}
+
+#navegar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#navegar > a {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    margin: 30px 0px;
+    background-color: black;
+    color: white;
+}
+
+#navegar > a:hover {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 0px 20px 5px #aaaaaa;
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+}
+
+section#kebra {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px 10px;
+}
+
+#kebra > img {
+    max-width: 20vw;
+    height: auto;
+}
+
+#txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 40px;
+}
+
+#txt > h2 {
+    font-size: 2em;
+}
+
+#txt > h3 {
+    font-size: 1.7em;
+}
+
+#txt > li {
+    text-align: justify;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+#txt > p > li > abbr {
+    text-decoration: none;
+}
+

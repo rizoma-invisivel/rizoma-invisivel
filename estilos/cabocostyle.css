@@ -1,0 +1,216 @@
+@keyframes piscadinha {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+@keyframes camaleao {
+    0% { background-color: #000; }
+  50% { background-color: #fff; }
+  100% { background-color: #000; }
+}
+
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(80px); }
+    100% { transform: translateX(-80px); }
+  }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+canvas {
+    margin: 20px;
+    width: 450px;
+    height: auto;
+}
+
+#hydra-canvas1 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas2 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas3 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas4 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas5 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas6 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas7 {
+    display: flex;
+    background: black;
+}
+
+#hydra-canvas8 {
+    display: flex;
+    background: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu > nav, p {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-self: center;
+    max-height: 100px;
+    max-width: 300px;
+}
+
+.menu> nav > p {
+    font-size: 1,5em;
+}
+
+ .menu > nav > a {
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+    align-self: center;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.menu > nav > a:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+.menu > nav > a:active {
+    background-color: rgb(221, 82, 253);
+    color: black;
+    box-shadow: 0px 0px 10px 5px rgb(221, 86, 251) ;
+}
+
+video,img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+    max-width: 450px;
+    max-height: auto;
+}
+
+img {
+    background-color: black;
+}
+
+.anima {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    max-height: auto;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgb(238, 164, 255);
+}
+
+.anima > p {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    margin-bottom: 30px;
+}
+
+.anima > nav > a {
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    justify-self: center;
+    color: #ff00ff;
+}
+
+.anima > nav > a:hover {
+    color: rgb(238, 164, 255);
+    text-decoration: line-through;
+    text-shadow: 0px 0px 5px plum;
+}
+
+.anima > nav > a:active {
+    color: #ff0000;
+}
+
+.vemermo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    height: auto;
+}
+
+.vemermo:hover {
+    transform: scale(1.08);
+}
+
+.vemermo:active {
+    transition: all 0.3s ease;
+}
+
+.oquemaiscresce {
+    justify-self: center;
+    align-self: center;
+    transition: transform 0.3s ease;
+}
+
+.bota-tudo {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000d7;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+    

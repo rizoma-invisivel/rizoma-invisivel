@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Passion+One:wght@400;700;900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sriracha&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes ciranda {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes camaleao {
+    0% {background-color: #00000026;}
+    100% {background-color: rgba(255, 255, 255, 0);}
+}
+
+@keyframes camaleaozinho {
+    0% {background-color: white;}
+    100% {background-color: black;}
+}
+
+@keyframes camaleaozao {
+    0% {color: rgb(211, 255, 182);}
+    25% {color: lightgreen;}
+    50% {color: rgb(3, 219, 46);}
+    75% {color: rgb(0, 102, 58);}
+    100% {color: rgb(120, 245, 168);}
+}
+
+@keyframes camaleao-doido {
+    0% {opacity: 0.5; transform: rotate(0deg); transform: translate(0px);}
+    50%{ transform: rotate(360deg); transform: translate(-100px,400px);}
+    100% {opacity: 1; transform: rotate(-360deg); transform: translate(100px,200px);}
+}
+
+@keyframes ciranda-cadencia {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes passeio {
+    0% {transform: translate(0px);}
+    50% { transform: translate(500px, 300px);}
+    100% {transform: translate(0px);}
+  }
+
+  @keyframes ciranda-passeio {
+    0% {transform: translate(0px); transform: rotate(0deg);}
+    50% { transform: translate(500px, 300px);}
+    100% {transform: translate(0px);transform: rotate(-360deg);}
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg) translateX(150px) rotate(0deg); /* Raio = metade da largura do container */
+    }
+    to {
+      transform: rotate(360deg) translateX(150px) rotate(-360deg); /* Rotação inversa para manter o elemento estável */
+    }
+  }
+
+@media (max-width: 1000px) {
+    
+    header > nav, img {
+        max-width: 80vw;
+    }
+    
+    #punk > video {
+        justify-self: center;
+        margin: auto;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    #cobra-cobrinha > img {
+        position: relative;
+        margin: auto;
+    }  
+    
+    h2,h1 {
+        scale: 0.85;
+    }
+
+    a {
+        font-size: 0.85;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00000095;
+    margin: 30px;
+}
+
+h1 > a {
+    font-size: 3em;
+    font-family: "Space Mono", monospace;
+    color: white;
+}
+
+.cocao > img {
+    max-width: 250px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav > a {
+    display: inline-flex;
+    flex-direction: column;
+    color: #f1eded;
+    border: 10px solid red;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 50px;
+    max-width: 90vw;
+}
+
+nav > a:hover {
+    background-color: #000000;
+    color: #f1eded;
+    text-decoration: line-through;
+    box-shadow: 0px 0px 20px 5px #ff0000;
+}
+
+#nave > a:hover {
+    text-shadow: 0px 0px 5px 5px #f1eded;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div > img {
+    display: flex;
+    justify-self: center;
+}
+
+.a > a {
+    font-size: 2em;
+    animation: camaleaozao 1s infinite;
+    transition: all .3s ease;
+    max-width: 90vw;
+}
+
+.a > a:hover {
+    box-shadow: 0px 0px 5px 5px rgb(211, 255, 182);
+}
+
+.corpao {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#cobra-cobrinha > img {
+    
+    position: absolute;
+    animation: girar 5s alternate infinite;
+    max-width: 60vw;
+    height: auto; 
+}
+
+#logic > img {
+    animation: camaleaozinho 2s infinite;
+    max-width: 70vw;
+    height: auto;
+}
+
+#ezln > img {
+    animation: camaleao-doido 0.5s infinite;
+    max-width: 70vw;
+    height: auto;
+}
+
+#coral > img {
+    animation: ciranda 2s linear infinite;
+    max-width: 70vw;
+    height: auto;
+}
+
+#punk > video{
+    transform: translate(-100px,100px);
+    max-width: 80vw;
+    height: auto;
+}
+
+.corpao > img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.corpao > #nuvem {
+    border-radius: 20px;
+}
+
+iframe {
+    width: 300px;
+}
+
+h2 {
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    max-width: 90vw;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.5em;
+        max-width: 70vw;
+        margin: auto;
+    }
+
+    .corpao > img, video, iframe {
+        max-width: 70vw;
+    }
+}

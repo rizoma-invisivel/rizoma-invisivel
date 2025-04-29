@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    padding: 20px;
+    margin: auto;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.vemermo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    height: auto;
+}
+
+.vemermo:hover {
+    transform: scale(1.08);
+}
+
+.vemermo:active {
+    transition: all 0.3s ease;
+}
+
+.oquemaiscresce {
+    max-width: 70vw;
+    height: auto;
+    margin: 40px auto;
+    justify-self: center;
+    align-self: center;
+    transition: transform 0.3s ease;
+}
+
+.bota-tudo {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c9;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+
