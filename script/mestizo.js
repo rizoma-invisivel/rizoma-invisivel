@@ -143,8 +143,19 @@ const hydra8 = new Hydra({
   .out()
   speed = 0.2;
 
+  const canvas9 = document.getElementById('hydra-canvas9')
+  const hydra9 = new Hydra({
+    canvas: canvas9,
+    width: canvas9.width,
+    height: canvas9.height,
+    detectAudio: true
+  });
 
-  
+ a.setBins(8)
+voronoi(50,0.3,2).
+hue(() => Math.sin(time)).
+modulatePixelate(noise(500),()=>a.fft[7]*3).
+out()
 
     
         
