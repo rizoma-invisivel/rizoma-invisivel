@@ -86,6 +86,12 @@ canvas {
     background: black;
 }
 
+
+#hydra-canvas10 {
+    display: flex;
+    background: black;
+}
+
 .menu {
     display: flex;
     flex-direction: column;

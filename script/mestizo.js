@@ -157,5 +157,20 @@ hue(() => Math.sin(time)).
 modulatePixelate(noise(500),()=>a.fft[7]*3).
 out()
 
-    
-        
+const canvas10 = document.getElementById('hydra-canvas10')
+  const hydra10 = new Hydra({
+    canvas: canvas10,
+    width: canvas10.width,
+    height: canvas10.height,
+    detectAudio: true
+  });
+
+  a.setBins(5)
+voronoi(10,0.3,5).
+color([1,0,0,1,0],[0,1,0,1,0],[0,0,1,1,0]).
+colorama([0.5,0.3,0.66,1.0].fast(0.0125)).
+hue(() => Math.sin(time)).
+modulatePixelate(noise(500),()=>a.fft[2]*3).
+modulateScale(voronoi(4,-0.2,-2)).
+luma(0.6).
+out()
