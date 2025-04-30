@@ -1,9 +1,11 @@
+  speed = 0.2
   const canvas = document.getElementById('hydra-canvas1');
   const hydra = new Hydra({
     canvas: canvas,
     width: canvas.width,
     height: canvas.height
   });
+  
       shape(3).repeat(4, 4, 0.0, 0.0).scroll(0,1,0,-6)
       .mult(noise(6,0.4,()=>Math.sin(time)*4)).modulatePixelate(osc(100,6,10),50)
       .color([1,0,1],[0,1,1],[1,1,0])
@@ -14,7 +16,7 @@
       //.scrollY(0.2,0.5)
       .luma(0,1)
       .out()
-      speed = 0.2;
+      speed = 0.2
 
 const canvas2 = document.getElementById('hydra-canvas2')
 const hydra2 = new Hydra({
@@ -55,7 +57,8 @@ const hydra3 = new Hydra({
       .modulate(voronoi(8,1), 0.08)
       .luma (0.3)
       .out()
-      
+   
+      speed = 0.6
 const canvas4 = document.getElementById('hydra-canvas4')
 const hydra4 = new Hydra({
     canvas: canvas4,
@@ -140,22 +143,7 @@ const hydra8 = new Hydra({
   .scale(0.99)
   .modulate(shape(99), 0.008)
     .luma (0.4)
-  .out()
-  speed = 0.2;
-
-  const canvas9 = document.getElementById('hydra-canvas9')
-  const hydra9 = new Hydra({
-    canvas: canvas9,
-    width: canvas9.width,
-    height: canvas9.height,
-    detectAudio: true
-  });
-
- a.setBins(8)
-voronoi(50,0.3,2).
-hue(() => Math.sin(time)).
-modulatePixelate(noise(500),()=>a.fft[7]*3).
-out()
+  .out();
 
 const canvas10 = document.getElementById('hydra-canvas10')
   const hydra10 = new Hydra({
@@ -172,5 +160,21 @@ colorama([0.5,0.3,0.66,1.0].fast(0.0125)).
 hue(() => Math.sin(time)).
 modulatePixelate(noise(500),()=>a.fft[2]*3).
 modulateScale(voronoi(4,-0.2,-2)).
-luma(0.6).
-out()
+luma(0.5).
+out();
+
+const canvas11 = document.getElementById('hydra-canvas11')
+  const hydra11 = new Hydra({
+    canvas: canvas11,
+    width: canvas11.width,
+    height: canvas11.height,
+    detectAudio: true
+  });
+
+  a.setBins(8)
+  voronoi(10,0.3,2).
+  hue(() => Math.sin(time)).
+  modulatePixelate(noise(500),()=>a.fft[7]*3).
+  out();
+
+  speed = 0.2
