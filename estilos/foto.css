@@ -27,8 +27,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
     transition: all 0.3s ease;
-    height: auto;
 }
 
 .vemermo:hover {
@@ -41,7 +41,6 @@ img {
 
 .oquemaiscresce {
     max-width: 70vw;
-    height: auto;
     margin: 40px auto;
     justify-self: center;
     align-self: center;
@@ -55,7 +54,7 @@ img {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #000000c9;
+    background-color: #000000e0;
     color: white;
     position: fixed;
     top: 0;
