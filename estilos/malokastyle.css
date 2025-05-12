@@ -102,28 +102,4 @@ section#kebra {
     height: auto;
 }
 
-#txt {
-    display: flex;
-    flex-direction: column;
-    max-width: 80vw;
-    margin: 40px;
-}
-
-#txt > h2 {
-    font-size: 2em;
-}
-
-#txt > h3 {
-    font-size: 1.7em;
-}
-
-#txt > li {
-    text-align: justify;
-    font-size: 1.4em;
-    margin-top: 10px;
-}
-
-#txt > p > li > abbr {
-    text-decoration: none;
-}
 

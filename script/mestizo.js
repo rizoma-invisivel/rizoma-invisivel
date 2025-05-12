@@ -154,12 +154,12 @@ const canvas10 = document.getElementById('hydra-canvas10')
   });
 
   a.setBins(5)
-voronoi(10,0.3,5).
+voronoi(20,2,2).
 color([1,0,0,1,0],[0,1,0,1,0],[0,0,1,1,0]).
 colorama([0.5,0.3,0.66,1.0].fast(0.0125)).
 hue(() => Math.sin(time)).
 modulatePixelate(noise(500),()=>a.fft[2]*3).
-modulateScale(voronoi(4,-0.2,-2)).
+modulateScale(voronoi(700,2,2)).
 luma(0.5).
 out();
 
@@ -172,7 +172,7 @@ const canvas11 = document.getElementById('hydra-canvas11')
   });
 
   a.setBins(8)
-  voronoi(10,0.3,2).
+  voronoi(10,2,2).
   hue(() => Math.sin(time)).
   modulatePixelate(noise(500),()=>a.fft[7]*3).
   out();

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Nabla&family=Passion+One:wght@400;700;900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sriracha&family=Tourney:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+#txt {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    padding: 10px;
+    margin: 40px auto;
+    line-height: 1.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+#txt > h2 {
+    font-size: 2em;
+    margin: 10px auto;
+    line-height: 1.5em;
+}
+
+#txt > h3 {
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+#txt > li {
+    text-align: justify;
+    font-size: 1.4em;
+    margin: 15px auto;
+    line-height: 1.2em;
+}
+
+#txt > p > li > abbr {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    #txt > li {
+        text-align: left;
+        line-height: 2em;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    padding: 20px;
+    margin: auto;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.53);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.484);
+}
+
+nav > a:hover {
+    scale: 1.05;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 15px 5px black ;
+}
