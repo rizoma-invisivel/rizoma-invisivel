@@ -13,7 +13,7 @@
         document.body.appendChild(renderer.domElement);
 
         const textureLoader = new THREE.TextureLoader();
-        const pixelTexture = textureLoader.load('../imagens/metalness-pix.png'); // Imagem 8x8 ou 16x16
+        const pixelTexture = textureLoader.load('./imagens/metalness-pix.png'); // Imagem 8x8 ou 16x16
         
         // Adiciona um cubo
         const geometry = new THREE.BoxGeometry();
@@ -25,7 +25,7 @@
         cube.position.x = 1
         scene.add(cube);
         
-        paintTexture = textureLoader.load ('../imagens/metalrainbow-tex.png')
+        paintTexture = textureLoader.load ('./imagens/metalrainbow-tex.png')
         // 3. Adiciona uma esfera
         const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
         const sphereMaterial = new THREE.MeshBasicMaterial({ 
