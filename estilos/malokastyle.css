@@ -20,7 +20,7 @@
 
 body {
     display: flex;
-    font-family: "Space Mono", monospace
+    font-family: "Space Mono", monospace;
 }
 
 header {
@@ -47,15 +47,6 @@ h1:hover {
     border-radius: 20px;
     box-shadow: 0px 0px 80px 50px #9c9c9c;
     background-color: #585757;
-}
-
-header > img {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 20vw;
-    margin: auto;
-    animation: piscar 3s infinite;
 }
 
 #navegar {
@@ -100,6 +91,35 @@ section#kebra {
 #kebra > img {
     max-width: 20vw;
     height: auto;
+    animation: piscar 3s infinite;
 }
 
+@media (max-width: 490px) {
 
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #navegar {
+        justify-content: left;
+        margin: auto;
+    }
+
+    #navegar > a {
+        font-size: 1.2em;
+        padding: 5px;
+        margin: 10px auto;
+    }
+}
