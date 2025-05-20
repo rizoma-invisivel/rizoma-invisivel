@@ -25,7 +25,7 @@
         cube.position.x = 1
         scene.add(cube);
         
-        paintTexture = textureLoader.load ('./imagens/metalrainbow-tex.png')
+        const paintTexture = textureLoader.load ('./imagens/metalrainbow-tex.png')
         // 3. Adiciona uma esfera
         const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
         const sphereMaterial = new THREE.MeshBasicMaterial({ 
