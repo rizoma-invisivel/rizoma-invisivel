@@ -3,7 +3,8 @@
   const hydra = new Hydra({
     canvas: canvas,
     width: canvas.width,
-    height: canvas.height
+    height: canvas.height,
+    detectAudio: false
   });
   
       shape(3).repeat(4, 4, 0.0, 0.0).scroll(0,1,0,-6)
@@ -22,7 +23,8 @@ const canvas2 = document.getElementById('hydra-canvas2')
 const hydra2 = new Hydra({
     canvas: canvas2,
     width: canvas2.width,
-    height: canvas2.height
+    height: canvas2.height,
+    detectAudio: false
   });
         gradient(1)
       .diff(noise(1,0.1,()=>Math.sin(time)*3)).modulatePixelate(voronoi(60,4,10),50)
@@ -41,7 +43,7 @@ const hydra3 = new Hydra({
     canvas: canvas3,
     width: canvas3.width,
     height: canvas3.height,
-    detectAudio: true
+    detectAudio: false
   });
 
       speed = 0.2
@@ -64,7 +66,7 @@ const hydra4 = new Hydra({
     canvas: canvas4,
     width: canvas4.width,
     height: canvas4.height,
-    detectAudio: true
+    detectAudio: false
   });
     shape(999). repeat(8,8)
     .scroll(2,2,0.1,0.1)
@@ -76,7 +78,7 @@ const canvas5 = document.getElementById('hydra-canvas5')
     canvas: canvas5,
     width: canvas5.width,
     height: canvas5.height,
-    detectAudio: true
+    detectAudio: false
   });
     shape(2)
     .mult(noise(5,1,()=> Math.sin(time)*3).saturate(3).modulateKaleid(voronoi(2,0.2,10),50).rotate(10,10))
@@ -95,7 +97,7 @@ const canvas6 = document.getElementById('hydra-canvas6')
     canvas: canvas6,
     width: canvas6.width,
     height: canvas6.height,
-    detectAudio: true
+    detectAudio: false
   });
     osc(20,0.2,20)
     .mult(voronoi(1,0.1,()=>Math.sin(time)*3)).modulatePixelate(noise(50,2,20),50)
@@ -113,7 +115,7 @@ const hydra7 = new Hydra({
   canvas: canvas7,
   width: canvas7.width,
   height: canvas7.height,
-  detectAudio: true
+  detectAudio: false
 });
   a.setBins(18)
   //bpm = 60
@@ -133,7 +135,7 @@ const hydra8 = new Hydra({
   canvas: canvas8,
   width: canvas8.width,
   height: canvas8.height,
-  detectAudio: true
+  detectAudio: false
 });
   osc(10,0.5,20)
   .mult(osc(10,0.1,()=>Math.sin(time)*3).saturate(3).kaleid(200))
@@ -150,7 +152,7 @@ const canvas10 = document.getElementById('hydra-canvas10')
     canvas: canvas10,
     width: canvas10.width,
     height: canvas10.height,
-    detectAudio: true
+    detectAudio: false
   });
 
   a.setBins(5)
@@ -168,7 +170,7 @@ const canvas11 = document.getElementById('hydra-canvas11')
     canvas: canvas11,
     width: canvas11.width,
     height: canvas11.height,
-    detectAudio: true
+    detectAudio: false
   });
 
   a.setBins(8)
