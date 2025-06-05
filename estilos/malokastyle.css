@@ -3,7 +3,7 @@
 
 @keyframes piscar {
     0% {opacity: 0;}
-    50% {opacity: 0.3;}
+    50% {opacity: 0.5;}
     100% {opacity: 0;}
 }
 
@@ -19,6 +19,7 @@
 }
 
 body {
+    background-color: #222222;
     display: flex;
     font-family: "Space Mono", monospace;
 }
@@ -94,9 +95,10 @@ section#kebra {
     animation: piscar 3s infinite;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 600px) {
 
     body {
+        background-color: #222222;
         display: flex;
         flex-direction: column;
         justify-content: center;

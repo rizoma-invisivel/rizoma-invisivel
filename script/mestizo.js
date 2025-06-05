@@ -4,7 +4,7 @@
     canvas: canvas,
     width: canvas.width,
     height: canvas.height,
-    detectAudio: false
+    detectAudio: true
   });
   
       shape(3).repeat(4, 4, 0.0, 0.0).scroll(0,1,0,-6)
