@@ -20,7 +20,7 @@ main {
 video {
     margin: 20px;
     max-width: 80vw;
-    max-height: fit-content;
+    max-height: 80vh;
     box-shadow: 0px 0px 3px rgba(245, 245, 245, 0.679);
 }
 
