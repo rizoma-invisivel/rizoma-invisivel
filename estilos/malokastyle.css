@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Nabla&family=Passion+One:wght@400;700;900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sriracha&family=Tourney:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Monofett&family=Nabla&family=Passion+One:wght@400;700;900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sriracha&family=Syne+Mono&family=Tourney:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
 
 @keyframes piscar {
     0% {opacity: 0;}
@@ -31,7 +31,7 @@ header {
 }
 
 h1 {
-    font-family: "Unbutu Mono", monospace;
+    font-family: "Space Mono", monospace;
     flex-wrap: nowrap;
     font-size: 3em;
     font-weight: bold;

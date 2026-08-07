@@ -41,11 +41,35 @@ video {
 }
 
 .oquemaiscresce {
+    width: 320px;
+    height: 240px;
+    object-fit: contain;
     max-width: 70vw;
     margin: 40px auto;
     justify-self: center;
     align-self: center;
     transition: transform 0.3s ease;
+    background: #111;
+}
+
+/* Mobile: coluna única, tela cheia */
+@media (max-width: 600px) {
+    .oquemaiscresce {
+        width: 95vw;
+        height: auto;
+        max-width: 95vw;
+    }
+    .vemermo {
+        margin: 10px;
+    }
+}
+
+/* Tablet: 2 colunas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .oquemaiscresce {
+        width: 42vw;
+        height: auto;
+    }
 }
 
 .bota-tudo {
